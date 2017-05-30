@@ -36,7 +36,6 @@ surv2 <- trans + beta2*(0.416667) # scaled and centered value for 30mm length
 #   Transform to real probability scale
 diff_surv <- plogis(surv2) - plogis(surv1)
 
-
 #  Get a single length for each individual, then calculate survival for mean_phi + 0*toe + beta2*length
 frog <- fEH%>%
             group_by(Index) %>%
